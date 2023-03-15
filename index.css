@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #4777de;
+  height: 100vh;
+}
+span {
+  color: #db1414;
+  bottom: 0;
+  left: 16px;
+  position: absolute;
+}
+input,
+textarea {
+  width: calc(100% - 30px);
+  border: 1px solid rgba(45, 57, 76, 0.1);
+  padding: 15px;
+  margin: 20px 0;
+}
+textarea {
+  resize: none;
+}
+#comment-field__inner {
+  position: relative;
+}
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.container-inner {
+  background: #ffffff;
+  border: 1px solid rgba(45, 57, 76, 0.1);
+  padding: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  width: 635px;
+  height: 640px;
+  transform: translateY(50%);
+  overflow: auto;
+}
+.container-inner__title {
+  margin-bottom: 40px;
+}
+.title {
+  font-weight: 700;
+}
+.container-inner__form {
+  border-bottom: 1px solid rgba(45, 57, 76, 0.1);
+  border-top: 1px solid rgba(45, 57, 76, 0.1);
+  padding: 20px 0;
+  width: 100%;
+}
+.comment-field__body {
+  padding: 15px;
+  border: 1px solid rgba(45, 57, 76, 0.1);
+  margin: 20px 0;
+  min-height: 60px;
+}
+.btn {
+  background: #a1b3d5;
+  border-radius: 2px;
+  padding: 15px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #4777de;
+}
+.error {
+  border: 1px solid #db1414 !important;
+}
+.form-group:not(:nth-child(3)) {
+  position: relative;
+}
+.focused {
+  border: 1px solid #4777de;
+}
+.remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: url('./img/delete.svg');
+  height: 20px;
+  width: 20px;
+}
+.like {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: url('./img/like.svg');
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.liked {
+  opacity: 1;
+}
+.name {
+  color: #385898;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 10px 0;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.date {
+  font-size: 12px;
+  line-height: 14px;
+  color: #90949c;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  padding: 2px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8fadea;
+  border-radius: 100px;
+}
